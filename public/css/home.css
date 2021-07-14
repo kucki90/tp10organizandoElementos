@@ -292,4 +292,9 @@ footer section article {
     .productos .producto{
         width: calc(25% - 8px);
     }
+
+    footer section{
+        width: 100%;
+        display: flex;
+    }
 }
