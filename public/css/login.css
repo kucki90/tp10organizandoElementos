@@ -24,3 +24,7 @@
     background-color: var(--color-Celeste);
     color: #FFF;
 }
+
+.info-login button:hover{
+    background-color: #0022AA;
+}
