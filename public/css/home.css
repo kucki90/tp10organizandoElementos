@@ -136,9 +136,9 @@ main .producto{
 }
 
 /* texto debajo de fotos */
-/* .productos .producto{
-    width: 90vw; /* ancho del viewport 
-} */
+.productos .producto:hover{
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+}
 .productos .producto .detalle{
     width: 100%;
     padding: 15px; /* margen interno */
@@ -187,11 +187,22 @@ main .producto{
 /* descripción */
 
 .producto .descripcion{
+    text-align: left;
+    padding-top: 0;
+    padding-left: 15px;
+    margin: 0;
+    opacity: 0;
+    height: 0;
+    /* transition: 0s; */
+    /* display: none; */ /* oculta la descripción de los artículos */        
+}
+
+.producto .descripcion:hover{
     font-size: 12px; /* tamaño de la tipografía */
     color: var(--color-Grisoscuro); /* color de la tipografía */
     font-weight: 100;
-    text-align: left;
-    padding-left: 15px;
+    opacity: 100;
+    margin-bottom: 15px;
     padding-bottom: 15px;
 }
 
@@ -240,10 +251,6 @@ footer section article {
 
 @media (max-width: 360px){ /* hasta los 360px */
 
-    .producto .descripcion{
-        display: none; /* oculta la descripción de los artículos */
-    }
-
 /* barra de navegación */
 
     .nav-mobile{
@@ -276,7 +283,7 @@ footer section article {
     }
 
     .productos .producto{
-        box-shadow: 0 0 10px rgb(100, 100, 100); /* sobra de los articles */
+        /* box-shadow: 0 0 10px rgb(100, 100, 100); */ /* sobra de los articles */
         width: calc(50% - 8px);
     }
 }
